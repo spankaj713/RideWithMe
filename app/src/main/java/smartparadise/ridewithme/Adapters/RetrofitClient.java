@@ -13,7 +13,7 @@ public class RetrofitClient {
     public static Retrofit getClient(){
         if(retrofit==null){
             retrofit=new Retrofit.Builder()
-                    .baseUrl("https://e87953b8.ngrok.io")
+                    .baseUrl("https://e87953b8.ngrok.io")          //Put your URL for the REST API's
                     .addConverterFactory(GsonConverterFactory.create())
                     .build();
         }
