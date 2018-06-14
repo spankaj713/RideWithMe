@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorPrimaryLight"
+        android:orientation="vertical"
+        android:weightSum="1">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp">
+
+            <ImageView
+                android:id="@+id/car"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:src="@drawable/mycar"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="53dp" />
+
+            <ImageView
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginEnd="43dp"
+                android:layout_marginTop="26dp"
+                android:src="@drawable/sign"
+                android:id="@+id/imageView2" />
+
+        </RelativeLayout>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:hint="Mobile No"
+            android:inputType="phone"
+            android:id="@+id/mobileNo"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:hint="Password"
+            android:inputType="textPassword"
+            android:id="@+id/password"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/textColor"
+            android:layout_marginLeft="15dp"
+            android:text="Forgot Password"
+            android:id="@+id/forgotPassword"
+            android:textSize="16dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/textColor"
+            android:layout_marginLeft="15dp"
+            android:id="@+id/registerUser"
+            android:text="Haven't account yet? click here"
+            android:textSize="16dp"
+            android:layout_marginTop="10dp"/>
+        <android.support.design.widget.FloatingActionButton
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:backgroundTint="@color/colorPrimary"
+            android:src="@drawable/ic_action_name"
+            android:layout_gravity="end"
+            android:id="@+id/next"
+            android:layout_marginTop="50dp"
+            android:layout_marginRight="20dp"
+            />
+
+    </LinearLayout>
+
+</FrameLayout>

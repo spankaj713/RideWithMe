@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:screenOrientation="portrait"
+    tools:context="smartparadise.ridewithme.Activities.HistorySinglePageActivity"
+    >
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context="smartparadise.ridewithme.Activities.HistorySinglePageActivity">
+
+        <fragment
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:name="com.google.android.gms.maps.SupportMapFragment"
+            android:id="@+id/mapHistory"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_margin="20dp">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="From - To"
+                android:textSize="18sp"
+                android:id="@+id/rideLocation"
+                android:layout_marginBottom="10sp"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Distance"
+                android:textSize="18sp"
+                android:id="@+id/rideDistance"
+                android:layout_marginBottom="10sp"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Date"
+                android:id="@+id/rideDate"
+                android:textSize="18sp"
+                android:layout_marginBottom="5sp"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:src="@drawable/userimage"
+                android:id="@+id/userImageHistory"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Name"
+                    android:textSize="16sp"
+                    android:id="@+id/userName"
+                    android:layout_marginBottom="10sp"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Phone No"
+                    android:textSize="16sp"
+                    android:id="@+id/userPhone"
+                    android:layout_marginBottom="10sp"/>
+            </LinearLayout>
+
+        </LinearLayout>
+        <RatingBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:numStars="5"
+            android:stepSize="1"
+            android:id="@+id/driverRating"
+            android:visibility="gone"
+            android:layout_gravity="center"/>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Pay here"
+            android:id="@+id/payButton"
+            android:enabled="false"
+            android:visibility="gone"/>
+    </LinearLayout>
+
+</android.support.v4.widget.NestedScrollView>

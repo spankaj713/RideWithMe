@@ -1,0 +1,56 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="smartparadise.ridewithme.Fragments.DriverOTPfrag">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="10dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Enter 6 digit OTP below"
+            android:textColor="@android:color/black"
+            />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/otp_et"
+            android:hint="- - - - - -"
+            android:textSize="20dp"/>
+
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Resend OTP "
+            android:layout_marginTop="10dp"
+            android:id="@+id/resendOTP"
+            android:textColor="@android:color/holo_blue_dark"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="10dp">
+
+            <android.support.design.widget.FloatingActionButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:backgroundTint="@color/colorPrimaryDark"
+                android:src="@drawable/forward_white"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"
+                android:id="@+id/floatNext1"
+                />
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</FrameLayout>
